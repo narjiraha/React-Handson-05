@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const HigherOrder = (OriginalComp) => {
-    const newComp = () => {
+    const NewComp = () => {
 
         const [count, setCount] = useState(0);
 
@@ -11,7 +11,7 @@ const HigherOrder = (OriginalComp) => {
         return <OriginalComp count={count} increament={increament} />
     }
 
-    return newComp;
+    return NewComp;
 }
 
 export default HigherOrder
